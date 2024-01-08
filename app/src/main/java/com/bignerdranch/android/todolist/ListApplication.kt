@@ -1,6 +1,7 @@
-package com.bignerdranch.android.criminalintent
+package com.bignerdranch.android.todolist
 
 import android.app.Application
+import com.bignerdranch.android.todolist.ListRepository
 
 class ListApplication : Application()
 {

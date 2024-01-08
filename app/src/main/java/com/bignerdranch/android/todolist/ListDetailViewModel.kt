@@ -4,8 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.switchMap
-import com.bignerdranch.android.criminalintent.ListRepository
 import com.bignerdranch.android.todolist.ListItem
 import java.util.UUID
 
@@ -19,5 +17,8 @@ class ListDetailViewModel(): ViewModel(){
         }
     fun loadList(listId: UUID) {
         listIdLiveData.value = listId
+    }
+    fun saveList(list: ListItem) {
+        listRepository.updateList(list)
     }
 }

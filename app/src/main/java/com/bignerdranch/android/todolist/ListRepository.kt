@@ -1,11 +1,11 @@
-package com.bignerdranch.android.criminalintent
+package com.bignerdranch.android.todolist
 
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.room.Room
 import com.bignerdranch.android.todolist.database.ListDatabase
 import com.bignerdranch.android.todolist.ListItem
-import com.sample.todolist.database.ListDatabase
+
 import java.util.UUID
 import java.util.concurrent.Executors
 
@@ -27,6 +27,17 @@ class ListRepository private constructor(context: Context) {
     fun addList(list: ListItem) {
         executor.execute {
             listDao.addList(list)
+        }
+    }
+
+    fun updateList(list: ListItem) {
+        executor.execute {
+            listDao.updateList(list)
+        }
+    }
+    fun deleteList(id: UUID) {
+        executor.execute {
+            listDao.deleteList(id)
         }
     }
 

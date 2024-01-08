@@ -3,6 +3,7 @@
     <string name="title_activity_list">ListActivity</string>
     <string name="title">Title</string>
     <string name="chip">1</string>
+    <string name="radio_group"></string>
     <string name="title_hint">Describe your task</string>
     <string name="priority_label">Priority</string>
     <string name="radioButton">High</string>

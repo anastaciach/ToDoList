@@ -1,7 +1,7 @@
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.bignerdranch.android.criminalintent.FragmentSecond
+import com.bignerdranch.android.todolist.FragmentSecond
 import com.bignerdranch.android.todolist.ListFragment
 import com.sample.todolist.R
 import java.util.UUID

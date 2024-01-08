@@ -69,7 +69,7 @@ class FragmentSecond : Fragment() {
         val view = inflater.inflate(R.layout.fragment_second, container, false)
         titleField = view.findViewById(R.id.list_title) as EditText
         addlistb = view.findViewById(R.id.add) as Button
-        radioGroup = view.findViewById(R.id.radio_group) as RadioGroup
+        //radioGroup = view.findViewById(R.id.radio_group) as RadioGroup
         radioButton = view.findViewById(R.id.radioButton) as RadioButton
         radioButton2 = view.findViewById(R.id.radioButton2) as RadioButton
         radioButton3 = view.findViewById(R.id.radioButton3) as RadioButton
