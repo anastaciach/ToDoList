@@ -1,4 +1,4 @@
-package com.sample.todolist.database
+package com.bignerdranch.android.todolist.database;
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -6,10 +6,11 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
+import com.bignerdranch.android.todolist.ListItem
 import java.util.UUID
-import com.sample.todolist.ListItem
 
 @Dao
+
 interface ListDao {
     @Query("SELECT * FROM list ORDER BY priority")
     fun getLists(): LiveData<List<ListItem>>

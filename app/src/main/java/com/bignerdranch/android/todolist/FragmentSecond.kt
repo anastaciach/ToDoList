@@ -1,4 +1,4 @@
-package com.bignerdranch.android.criminalintent
+package com.bignerdranch.android.todolist
 
 import android.content.Context
 import android.os.Bundle
